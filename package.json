@@ -1,0 +1,23 @@
+{
+  "name": "heroku-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ceyhun Enki Aksan <ceaksan@dnomia.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/piscine-fromage-14435.git"
+  },
+  "keywords": [
+    "node.js",
+    "express"
+  ]
+}
