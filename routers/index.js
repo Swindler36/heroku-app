@@ -4,6 +4,9 @@ const api = require("./api/index");
 const auth = require("./auth/index");
 const { checkAuth } = require("../middlewares/auth/checkAuth");
 
+router.get("/",(req,res,next) => {
+  res.send("hello");
+});
 router.use("/v1/api",api);
 router.use("/v1/auth",auth);
 
