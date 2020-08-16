@@ -1,23 +1,26 @@
 {
-  "name": "heroku-app",
+  "name": "chat-bot",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Ceyhun Enki Aksan <ceaksan@dnomia.com>",
-  "license": "MIT",
+  "description": "this is a chat bot that has similar to call centers",
+  "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.28"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://git.heroku.com/piscine-fromage-14435.git"
-  },
-  "keywords": [
-    "node.js",
-    "express"
-  ]
+  "author": "Furkan Zerman",
+  "license": "MIT"
 }
